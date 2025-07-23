@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	z-index: 999;
+	position: relative;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 300px;
+	transition: 0.5s ease;
+}
+
+header .title a{
+	color: rgb(235, 129, 37);
+	font-size:xx-large;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+
+header .nav{
+	position: relative;
+}
+
+header .nav .nav-items a{
+	position: relative;
+	color: black;
+	font-size:medium;
+	text-decoration: none;
+	font-weight: 500;
+	transition: 0.3s ease;
+	margin-left: 30px;
+}
+
+.slider {
+	height: 30px;
+	width: 120px;
+	border-radius: 50px;
+	background-image: linear-gradient(
+			rgb(255, 195, 110),
+			rgb(255, 146, 91));
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	transition: all 0.5s ease-in-out;
+}
+
+
+header .nav .nav-items a::before{
+	content: '';
+	position: absolute;
+	background: #000;
+	width: 0;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	transition: 0.3s ease;
+
+
+}
+
+header .nav .nav-items a:hover::before{
+	width: 100%;
+}
+
+section{
+	padding: 30px;
+}
+
+.home{
+	position: absolute;
+	width : 100%;
+	display: flex;
+	background: url("images/park2.jpeg");
+	background-size: cover;
+	
+}
+
+.gap{
+	margin-left: 10px;
+	color: #000;
+}
+
+.home .content input:hover{
+	transform: scale(1.1);
+	
+}
+
+.road{
+	margin-bottom: 200px;
+}
+
+.slider-navigation .nav-btn:not(:last-child){
+	margin-right: 20px;
+}
+
+.slider-navigation .nav-bt:hover{
+	transform: scale(1.5);
+}
